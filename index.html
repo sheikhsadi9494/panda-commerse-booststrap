@@ -10,9 +10,9 @@
 </head>
 <body>
    <!-- header start  -->
-   <header>
+   <header id="home">
      <!-- navigation bar  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="">
@@ -23,16 +23,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BackPack</a>
+                <a class="nav-link" href="#backpack">BackPack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
          </div>
@@ -123,7 +123,7 @@
       </div>
    </section>
     <!-- shoes section  -->
-   <section class="container">
+   <section class="container" id="shoes">
      <h2>Shoes</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4">
       <div class="col">
@@ -168,7 +168,7 @@
     </div>
    </section>
    <!-- bags section  -->
-   <section class="container my-5">
+   <section class="container my-5" id="backpack">
      <h2>backPack</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4">
       <div class="col">
@@ -214,12 +214,17 @@
     </div>
    </section>
    <!-- web-site subscribe section  -->
-    <section class="container">
-      
+    <section style="height: 300px;"  class="container d-flex justify-content-center align-items-center rounded-3 bg-info" id="subscribe">
+    <div>
+      <h1>LET'S STAY IN TOUCH</h1>
+      <p>Get updates on sales, specials and more</p>
+      <input class="border-0 rounded-3" type="text" placeholder="enter your email"><br>
+      <button class="btn btn btn-warning mt-2">Submit</button>
+    </div>
     </section>
    </main>
-   <footer>
-
+   <footer class="mt-5 text-center">
+       <p><small>©2020. Panda Commerce. All rights reserved. Sheikh Sadi, Bangladesh Khulna Satkhira.</small></p>
    </footer>
 
     <!-- booststrap script link  -->
